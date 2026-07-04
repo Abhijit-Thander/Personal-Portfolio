@@ -35,7 +35,7 @@ const Navbar = () => {
         </Link>
         <Link
           className="font-cinzel text-md text-[#888787] hover:text-[#E3E3E3] tracking-[2px] font-semibold"
-          // to={"/skills"}
+          // to="#skills"
         >
           Skills
         </Link>

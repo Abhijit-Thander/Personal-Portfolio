@@ -7,6 +7,7 @@ import { Database, Table2, Wrench } from "lucide-react";
 const Skills = () => {
   return (
     <div
+      id="skills"
       className=" bg-[#0f0f0f] w-full p-6 sm:px-16 pt-20 pb-20 min-h-screen bg-cover   "
       style={{ backgroundImage: `url(${bg})` }}
     >
