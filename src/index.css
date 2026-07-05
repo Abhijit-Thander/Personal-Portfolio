@@ -23,6 +23,60 @@ html.lenis body {
   scroll-behavior: auto !important;
 }
 
+/* ============================================
+   Custom Cursor Styles
+   Add this to your global CSS file (e.g. index.css)
+   ============================================ */
+
+/* Hide the real cursor everywhere, only when our custom one is active
+   (desktop/mouse only — see the isTouch check in CustomCursor.jsx) */
+html.custom-cursor-active,
+html.custom-cursor-active * {
+  cursor: none !important;
+}
+
+
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+  margin-top: -18px;
+  border-radius: 50%;
+  border: 1.5px solid #25f41e;
+  pointer-events: none;
+  z-index: 9998;
+  will-change: transform;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease,
+    margin 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Grown state — when hovering a link/button/card */
+.cursor-ring.cursor-hover {
+  width: 56px;
+  height: 56px;
+  margin-left: -28px;
+  margin-top: -28px;
+  background-color: rgba(156, 124, 76, 0.15); /* soft bronze fill */
+  border-color: #9c7c4c;
+}
+
+/* Only enable the custom cursor on devices that actually have a mouse.
+   On touch screens this whole thing stays hidden regardless. */
+@media (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}
+
 @theme {
   --font-cinzel: "Cinzel", serif;
   --font-cinzel-decorative: "Cinzel Decorative", cursive;

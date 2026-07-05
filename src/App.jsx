@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Experiences from "./pages/Experiences";
+import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const App = () => {
 
   return (
     <>
+      <CustomCursor />
       <Navbar />
       <Home />
       <Experiences />

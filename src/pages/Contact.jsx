@@ -5,6 +5,7 @@ import contactLeave from "../assets/contactLeave.svg";
 const Contact = () => {
   return (
     <div
+      id="contact"
       className=" bg-[#0f0f0f] w-full px-16 pt-20 pb-10 min-h-screen bg-cover   "
       style={{ backgroundImage: `url(${bg})` }}
     >

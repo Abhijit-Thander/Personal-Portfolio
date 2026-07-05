@@ -52,7 +52,11 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <Mail color="#888787" className="cursor-pointer" size={26} />
+      <Mail
+        color="#888787"
+        className="cursor-pointer hover:text-[#E3E3E3]"
+        size={26}
+      />
     </nav>
   );
 };
