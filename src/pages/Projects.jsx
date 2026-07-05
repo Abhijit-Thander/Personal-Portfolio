@@ -3,37 +3,40 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import house from "../assets/projecthouse.svg";
 import waffle from "../assets/waffle.png";
-import yt from "../assets/ytProject.png";
+import DentalClinic from "../assets/DentalClinic.png";
+import Odisej from "../assets/Odisej.png";
+import SwiftCart from "../assets/SwiftCart.png";
+import Pokedex from "../assets/Pokedex.png";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Add new projects here — everything below (layout, progress, arrows) adapts automatically
 const projects = [
   {
-    title: "YOUTUBE CLONE",
-    description: "Youtube Clone Website using Youtube api.",
+    title: "Sakthi Dental Clinic",
+    description: "Dental Clinic Website using React and Tailwind CSS.",
+    tags: ["react", "Gsap", "ScrollTrigger"],
+    image: DentalClinic,
+  },
+
+  {
+    title: "Pokedex",
+    description: "Pokedex Website using React and Pokemon Api.",
     tags: ["react", "tailwind css"],
-    image: yt,
+    image: Pokedex,
   },
   {
-    title: "WAFFLE CLONE",
-    description: "Waffle Clone Website using React and Tailwind CSS.",
-    tags: ["html", "css", "locomotive scroll"],
-    image: waffle,
-  },
-  {
-    title: "YOUTUBE CLONE",
-    description: "Youtube Clone Website using Youtube api.",
+    title: "SwiftCart - Ecommerce Website",
+    description: "Ecommerce Website using React and Tailwind CSS.",
     tags: ["react", "tailwind css"],
-    image: yt,
+    image: SwiftCart,
   },
   {
-    title: "WAFFLE CLONE",
-    description: "Waffle Clone Website using React and Tailwind CSS.",
+    title: "Hotel Odisej - Mljet Island Hotel",
+    description: "Hotel Website using React and Tailwind CSS .",
     tags: ["html", "css", "locomotive scroll"],
-    image: waffle,
+    image: Odisej,
   },
 ];
 
@@ -76,24 +79,10 @@ const Projects = () => {
     return () => ctx.revert();
   }, []);
 
-  // Manual arrow navigation — jumps the ScrollTrigger's scroll position
-  const goTo = (index) => {
-    const clamped = Math.max(0, Math.min(index, projects.length - 1));
-    const st = scrollTriggerRef.current;
-    if (!st) return;
-    const targetScroll =
-      st.start + (st.end - st.start) * (clamped / (projects.length - 1));
-    gsap.to(window, {
-      scrollTo: targetScroll,
-      duration: 0.8,
-      ease: "power2.out",
-    });
-  };
-
   return (
     <div
       ref={sectionRef}
-      className="relative h-screen overflow-hidden bg-[#EFEFEF] p-4 sm:p-10 flex flex-col"
+      className="relative overflow-hidden bg-[#EFEFEF] p-4 sm:p-10 flex flex-col"
     >
       {/* Header */}
       <div className="shrink-0">
@@ -103,26 +92,8 @@ const Projects = () => {
         </h1>
       </div>
 
-      {/* Arrow nav — reuses your imported icons */}
-      <div className="hidden sm:flex absolute right-10 top-14 gap-3 z-10">
-        <button
-          onClick={() => goTo(active - 1)}
-          disabled={active === 0}
-          className="border border-[#a1a1a1] p-2 rounded-full text-[#141414] hover:bg-[#141414] hover:text-[#DCDCDC] transition-all duration-300 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-[#141414]"
-        >
-          <ArrowLeft size={20} />
-        </button>
-        <button
-          onClick={() => goTo(active + 1)}
-          disabled={active === projects.length - 1}
-          className="border border-[#a1a1a1] p-2 rounded-full text-[#141414] hover:bg-[#141414] hover:text-[#DCDCDC] transition-all duration-300 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-[#141414]"
-        >
-          <ArrowRight size={20} />
-        </button>
-      </div>
-
       {/* Horizontal track — takes remaining space, cards centered within it */}
-      <div className="flex-1 min-h-0 flex items-center overflow-hidden">
+      <div className="flex-1 min-h-0 flex items-center overflow-hidden pt-8 px-6  ">
         <div ref={trackRef} className="flex items-start gap-10 sm:gap-16 w-max">
           {projects.map((project, i) => (
             <ProjectCard key={project.title} project={project} index={i} />
@@ -131,7 +102,7 @@ const Projects = () => {
       </div>
 
       {/* Static CTA — sits below the cards, does NOT scroll with the track */}
-      <div className="shrink-0 flex flex-col items-center justify-center pt-14 pb-10 sm:pb-4">
+      <div className="shrink-0 flex   flex-col items-center justify-center  py-10 sm:pb-4">
         <Link
           to={"https://github.com/Abhijit-Thander"}
           target="_blank"
@@ -159,26 +130,19 @@ const Projects = () => {
   );
 };
 
-// Gallery-plaque style card: exhibit number, framed image with reveal overlay,
-// underline-on-hover title. Accent color is a muted bronze (#9C7C4C) — picked to
-// sit with the classical/museum feel of your arch icon + Cinzel type, rather than
-// a generic accent.
 const ProjectCard = ({ project, index }) => {
   return (
     <div className="w-[85vw] sm:w-[38vw] shrink-0 group">
       {/* Framed image with hover reveal */}
-      <div className="relative overflow-hidden rounded-sm border border-[#a1a1a1] shadow-lg">
+      <div className="relative h-80 overflow-hidden rounded-sm border border-[#a1a1a1] shadow-lg">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-90 object-cover cursor-pointer transition-transform duration-700 ease-out group-hover:scale-110"
+          className="w-full h-full object-fill cursor-pointer transition-transform duration-700 ease-out group-hover:scale-104"
         />
 
-        {/* Bronze frame line that draws in on hover */}
-        <div className="pointer-events-none absolute inset-0 border-2 border-[#9C7C4C] scale-95 opacity-0 transition-all duration-500 group-hover:scale-100 group-hover:opacity-100" />
-
         {/* Dark gradient + CTA overlay */}
-        <div className="absolute inset-0 flex items-end bg-linear-to-t from-black/70 via-black/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+        <div className="absolute   inset-0 flex items-end bg-linear-to-t from-black/70 via-black/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100">
           <span className="m-5 flex items-center gap-2 font-cinzel text-sm tracking-[0.2em] text-[#EFEFEF]">
             VIEW PROJECT
             <ArrowRight
@@ -187,15 +151,10 @@ const ProjectCard = ({ project, index }) => {
             />
           </span>
         </div>
-
-        {/* Exhibit number badge */}
-        <span className="absolute top-3 left-3 flex h-9 w-9 items-center justify-center rounded-full bg-[#EFEFEF]/90 font-cinzel-decorative text-sm text-[#141414] backdrop-blur-sm">
-          {String(index + 1).padStart(2, "0")}
-        </span>
       </div>
 
       {/* Plaque info strip */}
-      <div className="mt-4 border-t border-[#a1a1a1] pt-3">
+      <div className="mt-4  border-t border-[#a1a1a1] ">
         <h1 className="inline-block font-cinzel-decorative text-xl relative">
           {project.title}
           <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-[#9C7C4C] transition-all duration-500 group-hover:w-full" />
