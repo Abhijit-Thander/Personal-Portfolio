@@ -4,14 +4,14 @@ import { Sparkle } from "lucide-react";
 
 const Experiences = () => {
   return (
-    <div className="min-h-[80%] bg-[#EFEFEF] py-16 sm:px-40 px-4 ">
+    <div className="min-h-[80%] bg-[#EFEFEF] sm:py-16 py-8 sm:px-40 px-4 ">
       <div className="flex items-center justify-center mb-5">
         <img src={logo} alt="svg" />
       </div>
-      <h1 className="text-center font-cinzel-decorative mb-14 text-4xl tracking-widest">
+      <h1 className="text-center font-cinzel-decorative sm:mb-14 mb-8 text-4xl tracking-widest">
         CHRONICLES
       </h1>
-      <div className="flex gap-10 ">
+      <div className="flex sm:gap-10 gap-3 ">
         <svg
           width="46"
           // height="60%"
@@ -260,12 +260,16 @@ const Experiences = () => {
           </defs>
         </svg>
 
-        <div className="w-full bg-[#EFEFEF] py-4 flex flex-wrap flex-col sm:justify-between ">
+        <div className="w-full bg-[#EFEFEF] py-4 gap-10 flex flex-wrap flex-col sm:justify-between ">
           {/* 1st Section */}
-          <div className="flex flex-col gap-6">
-            <div className=" flex justify-between">
-              <h1 className="font-cinzel text-3xl">Frontend Developer</h1>
-              <p className="font-cinzel text-xl">2026 - Present</p>
+          <div className="flex flex-col sm:gap-6 gap-4">
+            <div className=" sm:flex  justify-between">
+              <h1 className="font-cinzel sm:text-[2vw] text-[6vw]">
+                Frontend Developer
+              </h1>
+              <p className="font-cinzel sm:text-xl text-[4vw]">
+                2026 - Present
+              </p>
             </div>
             <h1 className="text-xl flex items-center gap-2">
               <span>
@@ -274,21 +278,21 @@ const Experiences = () => {
               Developing websites for clients based on Figma designs using
               React.js and Tailwind CSS.
             </h1>
-            <h1 className="text-xl   flex gap-2 items-center">
+            <h1 className="text-xl flex gap-2 items-center">
               <span>
                 <Sparkle size={20} />
               </span>
               Building adaptive interfaces where property recommendations and
               valuation journeys are personalized to each visitor.
             </h1>
-            <div className="flex gap-4">
-              <div className="border px-3 bg-[#E6E6E6] text-md  border-[#a1a1a1] font-cinzel  ">
+            <div className="flex sm:gap-4 gap-3">
+              <div className="border px-3 bg-[#E6E6E6] sm:text-md   border-[#a1a1a1] font-cinzel">
                 React
               </div>
-              <div className="border px-3 bg-[#E6E6E6] text-md  border-[#a1a1a1] font-cinzel  ">
-                Tailwind Css
+              <div className="border px-3 bg-[#E6E6E6] sm:text-md   border-[#a1a1a1] font-cinzel">
+                Tailwind
               </div>
-              <div className="border px-3 bg-[#E6E6E6] text-md  border-[#a1a1a1] font-cinzel  ">
+              <div className="border px-3 bg-[#E6E6E6]  sm:text-md   border-[#a1a1a1] font-cinzel">
                 Typescript
               </div>
             </div>
@@ -296,9 +300,13 @@ const Experiences = () => {
 
           {/* 2nd Section */}
           <div className="flex flex-col gap-6">
-            <div className=" flex justify-between">
-              <h1 className="font-cinzel text-3xl">Intern At ShadowFox</h1>
-              <p className="font-cinzel text-xl">June 2026 - July 2026</p>
+            <div className=" sm:flex justify-between">
+              <h1 className="font-cinzel sm:text-[2vw] text-[6vw]">
+                Intern At ShadowFox
+              </h1>
+              <p className="font-cinzel sm:text-xl text-[4vw]">
+                June 2026 - July 2026
+              </p>
             </div>
             <h1 className="text-xl flex items-center gap-2">
               <span>
@@ -333,9 +341,11 @@ const Experiences = () => {
 
           {/* 3rd Section */}
           <div className="flex flex-col gap-6">
-            <div className=" flex justify-between">
-              <h1 className="font-cinzel text-3xl">Started Web Journey</h1>
-              <p className="font-cinzel text-xl">August - 2023</p>
+            <div className=" sm:flex justify-between">
+              <h1 className="font-cinzel sm:text-[2vw] text-[6vw]">
+                Started Web Journey
+              </h1>
+              <p className="font-cinzel sm:text-xl text-[4vw]">August - 2023</p>
             </div>
             <h1 className="text-xl flex items-center italic gap-2">
               "Success in life is just like coding — debug your mistakes,

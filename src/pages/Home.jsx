@@ -9,11 +9,11 @@ const Home = () => {
   return (
     <>
       <div className="h-[calc(100vh-6rem)] bg-[#111111] flex flex-col justify-between items-center ">
-        <div className="  flex flex-col gap-8 pt-16 items-center justify-center">
-          <h1 className="text-[#EEEEEE] sm:text-9xl text-6xl font-cinzel-decorative">
+        <div className="flex flex-col  pt-12 items-center justify-center  ">
+          <h1 className="text-[#EEEEEE] sm:text-[9vw] text-[15vw] font-cinzel-decorative">
             THE INNER
           </h1>
-          <h1 className="text-[#EEEEEE]  sm:text-9xl text-7xl font-cinzel-decorative">
+          <h1 className="text-[#EEEEEE]  sm:text-[8vw] text-7xl font-cinzel-decorative">
             CIT<span className="text-[#8cfc88]">A</span>DEL
           </h1>
         </div>

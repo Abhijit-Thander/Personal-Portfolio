@@ -55,7 +55,7 @@ const Navbar = () => {
       <Mail
         color="#888787"
         className="cursor-pointer hover:text-[#E3E3E3]"
-        size={26}
+        size={30}
       />
     </nav>
   );
