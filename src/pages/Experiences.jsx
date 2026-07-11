@@ -347,7 +347,7 @@ const Experiences = () => {
               </h1>
               <p className="font-cinzel sm:text-xl text-[4vw]">August - 2023</p>
             </div>
-            <h1 className="text-xl flex items-center italic gap-2">
+            <h1 className="sm:text-xl text-[4vw] flex items-center italic gap-2">
               "Success in life is just like coding — debug your mistakes,
               refactor your habits, and keep shipping better versions of
               yourself."

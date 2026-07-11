@@ -7,7 +7,6 @@ import { Database, Table2, Wrench } from "lucide-react";
 const Skills = () => {
   return (
     <div
-      id="skills"
       className=" bg-[#0f0f0f] w-full p-6 sm:px-16 pt-20 pb-20 min-h-screen bg-cover   "
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -116,10 +115,10 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="bg-[#0f0f0f] h-70  mt-20  ">
+      <div className="bg-[#0f0f0f] sm:h-70  mt-20  ">
         <hr className="h-0.5 border-[#3a3a3a] w-full" />
-        <div className="sm:flex items-center sm:justify-between gap-4 sm:gap-10  h-full">
-          <div className="w-96 flex flex-col gap-4">
+        <div className="sm:flex items-center sm:justify-between gap-6  sm:gap-10  sm:h-full">
+          <div className="w-96 flex flex-col sm:gap-4 mt-4">
             <h1 className="text-2xl font-cinzel-decorative text-[#F0F0F0]">
               Founndation Craft
             </h1>
@@ -130,7 +129,7 @@ const Skills = () => {
               scale & avoid a mess.
             </p>
           </div>
-          <div className="flex flex-col gap-4  w-96">
+          <div className="flex flex-col sm:gap-4 mt-4 w-96">
             <h1 className="font-cinzel-decorative text-2xl text-[#F0F0F0]">
               The Aesthetic of logic
             </h1>
@@ -141,7 +140,7 @@ const Skills = () => {
               looks at my work, they actuallu understand what's going on.
             </p>
           </div>
-          <div className="flex flex-col gap-4  w-96">
+          <div className="flex flex-col sm:gap-4 mt-4  w-96">
             <h1 className="font-cinzel-decorative text-2xl text-[#F0F0F0]">
               Resilient devivery
             </h1>

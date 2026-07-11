@@ -8,21 +8,21 @@ import { Link } from "react-router";
 const Home = () => {
   return (
     <>
-      <div className="h-[calc(100vh-6rem)] bg-[#111111] flex flex-col justify-between items-center ">
+      <div className="h-[calc(100vh-6rem)] bg-[#111111] flex flex-col  justify-between items-center ">
         <div className="flex flex-col  pt-12 items-center justify-center  ">
-          <h1 className="text-[#EEEEEE] sm:text-[9vw] text-[15vw] font-cinzel-decorative">
+          <h1 className="text-[#EEEEEE] sm:text-[9vw] text-[15vw] font-cinzel-decorative ">
             THE INNER
           </h1>
           <h1 className="text-[#EEEEEE]  sm:text-[8vw] text-7xl font-cinzel-decorative">
             CIT<span className="text-[#8cfc88]">A</span>DEL
           </h1>
         </div>
-        <div className="flex flex-col gap-4 pb-7 items-center  justify-around ">
+        <div className="flex flex-col gap-4 pb-7 items-center justify-around   ">
           <div className="flex flex-col  items-center justify-center">
-            <h1 className="text-3xl text-[#EEEEEE] font-cinzel tracking-[8px]">
+            <h1 className="sm:text-3xl text-[6vw] text-[#EEEEEE] font-cinzel tracking-[8px]">
               ABHIJIT THANDER
             </h1>
-            <h1 className="text-2xl text-[#DCDCDC] font-cinzel tracking-[8px]">
+            <h1 className="sm:text-2xl text-[4vw] text-[#DCDCDC] font-cinzel tracking-[8px]">
               Frontend Developer
             </h1>
           </div>
@@ -45,10 +45,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <Experiences />
-      <Skills />
-      <Projects />
-      <Contact /> */}
     </>
   );
 };

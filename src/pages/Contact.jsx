@@ -9,7 +9,7 @@ const Contact = () => {
       className=" bg-[#0f0f0f] w-full sm:px-16 px-6 sm:pt-20 pt-10 sm:pb-10 min-h-screen bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="flex flex-col items-center justify-center gap-3">
+      <div className="flex flex-col items-center justify-center gap-3 mb-20">
         <img src={contactLeave} alt="" />
         <h1 className="font-cinzel-decorative  text-4xl text-[#DFDFDF]">
           Contact Me

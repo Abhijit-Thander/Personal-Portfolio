@@ -25,7 +25,7 @@ const Navbar = () => {
     >
       <Link
         to={"/"}
-        className="sm:text-3xl sm:font-bold font-cinzel-decorative text-[#E3E3E3] text-4xl"
+        className="sm:text-3xl sm:font-bold font-cinzel-decorative text-[#E3E3E3] text-[8vw]"
       >
         <span className="text-[#8cfc88]">A.</span>T.
       </Link>
