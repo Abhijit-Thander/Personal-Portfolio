@@ -124,7 +124,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSending}
-                className="font-cinzel-decorative cursor-pointer text-xl text-[#DCDCDC] px-16 py-4 border border-[#DCDCDC] tracking-[0.2em] hover:bg-[#DCDCDC] hover:text-black transition-all duration-300"
+                className="font-cinzel-decorative cursor-pointer sm:text-xl text-[#DCDCDC] px-16 py-4 border border-[#DCDCDC] tracking-[0.2em] hover:bg-[#DCDCDC] hover:text-black transition-all duration-300"
               >
                 {isSending ? "Sending..." : "SEND MESSAGE"}
               </button>
