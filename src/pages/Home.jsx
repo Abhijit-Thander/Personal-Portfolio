@@ -22,7 +22,7 @@ const Home = () => {
             <h1 className="sm:text-3xl text-[6vw] text-[#EEEEEE] font-cinzel tracking-[8px]">
               ABHIJIT THANDER
             </h1>
-            <h1 className="sm:text-2xl text-[4vw] text-[#DCDCDC] font-cinzel tracking-[8px]">
+            <h1 className="sm:text-2xl text-[4vw] text-[#dcdcdcbb] font-cinzel tracking-[4px]">
               Frontend Developer
             </h1>
           </div>

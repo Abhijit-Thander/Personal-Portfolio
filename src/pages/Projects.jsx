@@ -308,7 +308,7 @@ const Projects = () => {
       </div>
 
       {/* Static CTA — sits below the cards, does NOT scroll with the track */}
-      <div className="shrink-0 flex flex-col items-center justify-center py-10 sm:pb-4">
+      <div className="shrink-0 flex   flex-col items-center justify-center py-10 sm:pb-4">
         <Link
           to={"https://github.com/Abhijit-Thander"}
           target="_blank"
