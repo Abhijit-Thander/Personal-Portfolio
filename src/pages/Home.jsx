@@ -73,10 +73,10 @@ const Home = () => {
 
         <div className="flex flex-col gap-8 sm:gap-4 items-center justify-center">
           <div className="flex flex-col items-center justify-center text-center px-2">
-            <h1 className="text-lg sm:text-2xl md:text-4xl text-[#EEEEEE] font-cinzel tracking-[4px] sm:tracking-[8px]">
+            <h1 className="text-lg sm:text-2xl md:text-3xl text-[#EEEEEE] font-cinzel tracking-[4px] sm:tracking-[8px]">
               ABHIJIT THANDER
             </h1>
-            <h1 className="text-sm sm:text-xl md:text-3xl text-[#dcdcdcbb] font-cinzel tracking-[2px] sm:tracking-[2px]">
+            <h1 className="text-sm sm:text-xl md:text-2xl text-[#dcdcdcbb] font-cinzel tracking-[2px] sm:tracking-[2px]">
               Frontend Developer
             </h1>
           </div>
