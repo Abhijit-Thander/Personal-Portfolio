@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-[#0f0f0f] w-full sm:px-16 px-6 sm:pt-20 pt-10 sm:pb-10 min-h-screen bg-cover"
+      className="bg-[#0f0f0f] w-full sm:px-16 px-6 sm:pt-20 pt-10 sm:pb-10  bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="flex flex-col items-center justify-center gap-3 mb-20">
@@ -52,7 +52,7 @@ const Contact = () => {
         </h1>
       </div>
 
-      <section className="text-white my-8">
+      <section className="text-white ">
         <div className="max-w-3xl mx-auto">
           <form
             onSubmit={handleFormSubmit}
